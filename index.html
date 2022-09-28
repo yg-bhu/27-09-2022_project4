@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #btns{
+            background-color: orange;
+        }
+
+        #f1{
+            background-color: black;
+            color: green;
+        }
+        #grid{
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 50px;
+        }
+        #grid2{
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 210px;
+            background-color: orange;
+            padding: 20px;
+        }
+    </style>
+    <title>Project_4</title>
+</head>
+<body>
+<div style="background-color: orange; color: green;">
+    <h3 >Sign Up</h3>
+    <form id="f1" align="center">
+        <div id="grid">
+                <div align="right">
+                    <label for="firstname" >First Name</label>
+                    <br><br>
+                    <label for="lname">Last Name</label>
+                    <br><br><br>
+                    <label for="date">Date of Birth</label>
+                    <br><br>
+                    <label>Gender</label>
+                    <br><br>
+                    <label for="country">Country</label>
+                    <br><br>
+                    <label for="el">E-mail</label>
+                    <br><br>
+                    <label for="phno">Phone</label>
+                    <br><br>
+                    <label for="pwd">Password</label>
+                    <br><br>
+                    <label for="cpwd">Confirm Password</label>
+                </div>
+
+                <div align="left">
+                    <input  type="text" id="firstname" name="fname" placeholder="Enter First Name">
+
+                    <br><br>
+                    
+                    <input type="text" id="lname" name="lname" placeholder="Enter Last Name">
+
+                    <br><br>
+                    <input type="date" id="date">
+                    <br><br>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <br><br>
+                    <select id="country">
+                        <option value="">India</option>
+                        <option value=""">USA</option>
+                    </select>
+                    <br><br>
+                    <input type="email" id="el" placeholder="Enter E-mail">
+                    <br><br>
+                    <input type="text" id="phno" placeholder="Enter phone">
+                    <br><br>
+                    <input type="password" id="pwd">
+                    <br><br>
+                    <input type="password" id="cpwd">
+                    <br><br>
+                    <input type="checkbox">I Agree to the Terms of use
+                </div>
+        </div>
+        <div id="grid2">
+            <div >
+            </div>
+
+            <div id="btns" align="left">
+                <button type="submit" style="background-color: green;">Submit</button>
+                <button type="button" style="background-color: red">Cancel</button>
+            </div>
+        </div>
+     </form>
+</div>
+</body>
+</html>
